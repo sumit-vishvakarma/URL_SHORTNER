@@ -1,2 +1,5 @@
-<h1>ShortUrls#show</h1>
-<p>Find me in app/views/short_urls/show.html.erb</p>
+<!-- app/views/short_urls/show.html.erb -->
+<h1>Your shortened URL</h1>
+<p>
+  <%= link_to short_url_path(@short_url.short_code), redirect_short_url(@short_url.short_code), target: "_blank" %>
+</p>

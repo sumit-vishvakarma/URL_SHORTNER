@@ -1,2 +1,7 @@
-<h1>ShortUrls#new</h1>
-<p>Find me in app/views/short_urls/new.html.erb</p>
+<h1>Shorten your URL</h1>
+
+<%= form_with model: @short_url, local: true do |f| %>
+  <%= f.label :long_url %>
+  <%= f.text_field :long_url %>
+  <%= f.submit "Shorten" %>
+<% end %>
